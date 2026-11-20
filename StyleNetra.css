@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* 👆👆Global Reset: We are resetting the features of the web page and starting from scratch */
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+/* 👆👆When we click on the navigation buttons, it'll smoothly scroll to that particular portion */
+
+
+
+body {
+    background-color: #08111f;
+    color: #edf4ff;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    /* 👆ViewPort Height vh means the part occupied on the screen vertically by our web page  */
+}
+/* 👆👆 Thsi is to modify the body contents overall */
+
+
+
+button{
+    background: #287ee8;
+    border: 0;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    /* 👆Cursor Pointer means that the cursor turns into hand when hovered on this button */
+}
+/* 👆👆This is for the Dispatch Mission button styles */
+
+
+
+.topbar{
+    min-height: 82px;
+    /* 👆Indirectly the thickness or size of the topbar */
+
+    display: flex;
+    /* 👆To display all the blocks in the topbar side by side */
+        align-items: center; /* 👈To keep all the blocks in the centre */
+        justify-content: space-between;
+        gap: 20px; /* 👈To give gap between the individual blocks...but here it doesn't work as we already gave justify-content: space-between...so this means we need to write any one of these */
+        /* 👆👆The above 3 properties are the derived properties of flex...
+        this means that without flex, these won't work */
+    padding: 15px 4%; /* 15px for top and bottom...4% for left and right */
+    background: #111f34;
+    border-bottom: 1px solid #2a3d59;
+    /* 👆1px is thickness of the bottom border...solid line...color of border */
+}
+/* 👆👆This is for the topbar */
+
+
+
+.brand{
+    display: flex;
+    /* 👆To arrange the logo and name side by side */
+        align-items: center; /* 👈To keep the items at centre from all 4 sides */
+        gap: 12px;
+}
+
+
+
+.brand-logo{
+    background-color: #287ee8;
+    color: white;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+
+
+.brand-name h1{
+    color: #287ee8;
+    letter-spacing: 3px; /* 👈For space between the letters */
+}
+.brand-name p{
+    color: #287ee8;
+    font-size: 9.55px;
+}
+
+
+
+nav{
+    display: flex;
+        gap: 20px;
+}
+nav a{
+    color: #aebed3;
+    font-size: 13px;
+    text-decoration: none; /* 👈To remove any decoration for the hyper links...In this case that decoration is underline */
+}
+nav a:hover{
+    color: #54a5ff;
+    font-weight: bold;
+}
+
+
+
+.header-right{
+    display: flex;
+        gap: 8px;
+        align-items: center;
+    color: #00ffa6;/* 👈This color is given for both the time and online dot...the color of the clock will be changed later to white */
+    font-size: 11px;
+}
+.online-dot{
+    /* The online dot contains no text...therefore when we add height and width, we simply get a square */
+    width: 9px;
+    height: 9px;
+    background-color: #00ffa6;
+    border-radius: 50%;/* 👈To make the square as circle */
+}
+#clock{
+    color: white;
+    /* 👆Changing the color of the clock */
+    font-family: monospace;
+    margin-left: 10px;
+}
